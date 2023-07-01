@@ -1,27 +1,32 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
+const img =require("../images/logo.png")
 const Nevbar = () => {
   return (
    <>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light ">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <Link to="/">
+      <div className='img'>
+        <img src={img} alt=""/>
+      </div>
+    </Link>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <Link class="nav-link active" aria-current="page" to="/">Home</Link>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
+          <Link class="nav-link active" to="/about">About</Link>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
+          <Link class="nav-link active" to="/">Pricing</Link>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          <Link class="nav-link active" to="/" tabindex="-1" aria-disabled="true"><button type="submit">Login</button></Link>
         </li>
       </ul>
     </div>
