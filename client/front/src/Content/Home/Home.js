@@ -1,8 +1,12 @@
-import React from 'react'
+import React from 'react';
+import { Route,Routes } from 'react-router-dom';
+import Nevbar from '../Nevbar/Nevbar';
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <>
+     <>home</>
+    </>
   )
 }
 

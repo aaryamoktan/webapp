@@ -25,9 +25,6 @@ const Nevbar = () => {
         <li class="nav-item">
           <Link class="nav-link active" to="/">Pricing</Link>
         </li>
-        <li class="nav-item">
-          <Link class="nav-link active" to="/" tabindex="-1" aria-disabled="true"><button type="submit">Login</button></Link>
-        </li>
       </ul>
     </div>
   </div>
