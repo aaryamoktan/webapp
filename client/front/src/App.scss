@@ -1,4 +1,52 @@
 @media screen and (min-width:1024px) {
+    .registrationContainer
+    {
+        position:relative;
+        width:100%;
+        height:100vh;
+        background:rgb(201, 240, 201);
+        img{
+            position:relative;
+            width:100%;
+            height:100%;
+            opacity: 0.6;
+        };
+        .registration_form
+        {
+            position: absolute;
+            top:100px;
+            width:25%;
+            height:auto;
+            text-align: center;
+            left:37.5%;
+            font-family: 'Courier New', Courier, monospace;
+            color:rgb(132, 131, 131);
+            font-size: 20px ;
+            box-shadow: 1px 1px 20px rgb(125, 124, 124);
+            label{
+                position:relative;
+                margin-top: 10px;
+            }
+            input{
+                position:relative;
+            }
+            select{
+                width:65%;
+                height:4vh;
+                text-align: center;
+                color:rgb(110, 109, 109);
+            }
+            button{
+                position:relative;
+                margin-top: 20px;
+                background:transparent;
+                border-radius: 20px;
+                margin-bottom: 20px;
+                border:2px solid rgb(134, 133, 133);
+                
+            }
+        }
+    }
     .navbar
     {
         position:relative;
@@ -33,7 +81,77 @@
             }
         }
     }
+    .logincontainer{
+    position:relative;
+    width:100%;
+    height:100vh;
+    background:rgb(201, 240, 201);
+    img{
+        position:relative;
+        width:100%;
+        height:100%;
+        opacity: 0.5;
+    };
+    .loginform
+    {
+        position:absolute;
+        width:20%;
+        text-align: center;
+        left:40%;
+        top:20%;
+        height:50vh;
+       box-shadow: 1px 1px 20px black;
+       .reg
+        {
+            position:relative;
+            top:75px;
+            width:100%;
+            height: 20px;
+            font-family: 'Courier New', Courier, monospace;
+            border-top: 2px solid rgb(113, 113, 113);
+            button
+            {
+                position:relative;
+                background: transparent;
+                border-radius: 20px;
+                border:2px solid rgb(88, 88, 88);
+            }
+
+        }
+       .form
+       {
+        position:relative;
+        width:100%;
+        top:50px;
+        height:auto;
+        
+        label
+        {
+            position:relative;
+            margin-top:10px
+        }
+        input{
+            position:relative;
+            width:75%;
+            margin-top: 10px;
+
+        }
+        button{
+            position:relative;
+            top:15px;
+            width:30%;  
+            background: transparent;
+            border: 2px solid rgb(104, 104, 104);
+            border-radius: 20px;
+        }
+
+       }
+    }
+
+    } 
 }
+
+
 @media screen and (max-width:767px){
     .navbar
     {
@@ -71,5 +189,120 @@
         
     }
     
+    .registrationContainer
+    {
+        position:relative;
+        width:100%;
+        height:100vh;
+        background:rgb(201, 240, 201);
+        img{
+            position:relative;
+            width:100%;
+            height:100%;
+            opacity: 0.6;
+        };
+        .registration_form
+        {
+            position: absolute;
+            top:60px;
+            width:70%;
+            height:auto;
+            text-align: center;
+            left:15%;
+            font-family: 'Courier New', Courier, monospace;
+            color:rgb(132, 131, 131);
+            font-size: 20px ;
+            box-shadow: 1px 1px 20px rgb(125, 124, 124);
+            label{
+                position:relative;
+                margin-top: 10px;
+            }
+            input{
+                position:relative;
+            }
+            select{
+                width:65%;
+                height:4vh;
+                text-align: center;
+                color:rgb(110, 109, 109);
+            }
+            button{
+                position:relative;
+                margin-top: 20px;
+                background:transparent;
+                border-radius: 20px;
+                margin-bottom: 20px;
+                border:2px solid rgb(134, 133, 133);
+                
+            }
+        }
+    }  
+    .logincontainer{
+        position:relative;
+        width:100%;
+        height:100vh;
+        background:rgb(201, 240, 201);
+        img{
+            position:relative;
+            width:100%;
+            height:100%;
+            opacity: 0.5;
+        };
+        .loginform
+        {
+            position:absolute;
+            width:60%;
+            text-align: center;
+            left:20%;
+            top:20%;
+            height:60vh;
+           box-shadow: 1px 1px 20px black;
+           .reg
+            {
+                position:relative;
+                top:75px;
+                width:100%;
+                height: 20px;
+                font-family: 'Courier New', Courier, monospace;
+                border-top: 2px solid rgb(113, 113, 113);
+                button
+                {
+                    position:relative;
+                    background: transparent;
+                    border-radius: 20px;
+                    border:2px solid rgb(88, 88, 88);
+                }
     
+            }
+           .form
+           {
+            position:relative;
+            width:100%;
+            top:50px;
+            height:auto;
+            
+            label
+            {
+                position:relative;
+                margin-top:10px
+            }
+            input{
+                position:relative;
+                width:75%;
+                margin-top: 10px;
+    
+            }
+            button{
+                position:relative;
+                top:15px;
+                width:30%;  
+                background: transparent;
+                border: 2px solid rgb(104, 104, 104);
+                border-radius: 20px;
+            }
+    
+           }
+        }
+    
+        }  
 }
