@@ -1,17 +1,6 @@
-const express = require("express");
-const mongoose = require("mongoose")
-const dotenv = require("dotenv")
-const app = express();
-dotenv.config({path:'./config.env'})
-const DB=process.env.DATABASE;
-mongoose.connect(DB).then(()=>
-{
-    console.log("sucessfull")
-})
+const express = require('express')
+const app = express()
+const port = 3000
 
-app.use(require("./router/auth"))
-
-app.listen(5000,()=>
-{
-    console.log("hello")
-})
+app.get('/', (req, res) => res.send('Hello World!'))
+app.listen(port, () => console.log(`Example app listening on port ${port}!`))
