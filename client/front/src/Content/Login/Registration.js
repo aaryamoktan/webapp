@@ -14,15 +14,10 @@ const Registration = () => {
   const submit = async(e) => {
     e.preventDefault();
     const {firstname,lastname,select,date,country,number,email,password} = data;
-    const res = await fetch("/registration",{
-      method:"POST",
-      headers:{
-        "Content-Type":"application/json"
-      },
-      body:JSON.stringify({
-        firstname,lastname,select,date,country,number,email,password
-      })
-    }); 
+    const res = axios.post("/registration",{
+      firstname,lastname,select,date,country,number,email,password
+    }
+    )
   }
 
   return (
@@ -64,7 +59,6 @@ const Registration = () => {
             <br />
             <input type="email" name="email" onChange={inputhandle} value={data.email} required></input>
             <br />
-
             <label>Password:</label>
             <br />
             <input type="password" name="password" onChange={inputhandle} value={data.password} required></input>
